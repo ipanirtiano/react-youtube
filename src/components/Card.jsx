@@ -55,7 +55,7 @@ const Card = ({ video }) => {
   return (
     <>
       <div
-        className="w-full sm:w-[300px] md:w-[320px] lg:w-[330px] cursor-pointer"
+        className="w-full sm:w-[260px] md:max-w-[290px] lg:max-w-[320px] cursor-pointer"
         onClick={handleClickDetailVideos}
       >
         <div className="w-full relative">
