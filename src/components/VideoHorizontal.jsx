@@ -29,7 +29,7 @@ const VideoHorizontal = ({ data }) => {
 
     getDetailChannel();
     // dispatch data detail video
-  }, [data.snippet.channelId, dispatch]);
+  }, [data, dispatch]);
 
   const handleClickDetailVideos = () => {
     // dispatch detail video

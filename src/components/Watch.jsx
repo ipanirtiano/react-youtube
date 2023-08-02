@@ -23,7 +23,7 @@ const Watch = () => {
     <>
       <Navbar />
       <div className="flex gap-4 mt-[70px] md:px-4 px-[4px] flex-wrap">
-        <div className="w-full md:max-w-[850px] px-3">
+        <div className="w-full md:max-w-[900px] px-3">
           <div className=" w-full h-[30vh] sm:h-[70vh]">
             <iframe
               src={`https://www.youtube.com/embed/${id}`}
@@ -39,7 +39,8 @@ const Watch = () => {
           <Descriptions data={videoDetails} />
           <Comments />
         </div>
-        <div>
+
+        <div className="">
           <p className="px-4 pb-4">Related Videos</p>
           <div className="w-full lg:max-w-[400px] h-screen overflow-y-auto ">
             {relatedVideo
