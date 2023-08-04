@@ -102,7 +102,7 @@ const Sidebar = ({ visible }) => {
 
   return (
     <div
-      className={`fixed overflow-auto h-screen w-[200px] bg-[#181818] top-14 shadow-xl transition-all ease-in-out duration-200 ${
+      className={`fixed overflow-auto h-screen w-[200px] bg-white top-14 shadow-xl transition-all ease-in-out duration-200 ${
         visible ? "left-0" : "left-[-1000px]"
       }`}
     >
@@ -110,7 +110,10 @@ const Sidebar = ({ visible }) => {
         <ul className="flex flex-col border-b-[1px] border-gray-600 pb-5">
           {mainLinks.map(({ icon, name }) => {
             return (
-              <li key={name} className="pl-4 py-3 hover:bg-zinc-700">
+              <li
+                key={name}
+                className="pl-4 py-3 hover:bg-zinc-900 hover:text-white"
+              >
                 <Link
                   to="/home"
                   className="flex gap-2 items-center cursor-pointer"
@@ -125,7 +128,7 @@ const Sidebar = ({ visible }) => {
         <ul className="flex flex-col border-b-[1px] border-gray-600 py-5">
           {secondaryLinks.map(({ icon, name }) => {
             return (
-              <li key={name} className="pl-4 py-3 hover:bg-zinc-700">
+              <li key={name} className="pl-4 py-3 hover:bg-zinc-900 hover:text-white">
                 <Link to="/" className="flex gap-2 items-center cursor-pointer">
                   {icon} {name}
                 </Link>
@@ -137,7 +140,7 @@ const Sidebar = ({ visible }) => {
         <ul className="flex flex-col border-b-[1px] border-gray-600 py-5">
           {subscriptionLinks.map(({ icon, name }) => {
             return (
-              <li key={name} className="pl-4 py-3 hover:bg-zinc-700">
+              <li key={name} className="pl-4 py-3 hover:bg-zinc-900 hover:text-white">
                 <Link to="/" className="flex gap-2 items-center cursor-pointer">
                   {icon} {name}
                 </Link>
@@ -149,7 +152,7 @@ const Sidebar = ({ visible }) => {
         <ul className="flex flex-col border-b-[1px] border-gray-600 py-5">
           {helpLinks.map(({ icon, name }) => {
             return (
-              <li key={name} className="pl-4 py-3 hover:bg-zinc-700">
+              <li key={name} className="pl-4 py-3 hover:bg-zinc-900 hover:text-white">
                 <Link to="/" className="flex gap-2 items-center cursor-pointer">
                   {icon} {name}
                 </Link>

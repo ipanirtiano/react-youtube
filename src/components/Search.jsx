@@ -61,13 +61,13 @@ const Search = ({ data }) => {
             {data.snippet.title}
           </p>
           <div className="flex space-x-3 mb-2">
-            <p className="text-xs md:text-sm font-thin">
+            <p className="text-xs md:text-sm">
               {" "}
               {videoDetails
                 ? numeral(videoDetails.statistics.viewCount).format("0.a")
                 : ""}
             </p>
-            <p className="text-xs md:text-sm font-thin">
+            <p className="text-xs md:text-sm">
               {data ? moment(data.snippet.publishedAt).fromNow() : ""}
             </p>
           </div>
@@ -80,7 +80,7 @@ const Search = ({ data }) => {
 
             <p className="text-sm">{data.snippet.channelTitle}</p>
           </div>
-          <p className="line-clamp-1 md:line-clamp-2 font-light text-sm">
+          <p className="line-clamp-1 md:line-clamp-2 text-sm">
             {data.snippet.description}
           </p>
         </div>

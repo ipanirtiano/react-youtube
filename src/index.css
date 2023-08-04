@@ -10,7 +10,11 @@
   box-sizing: border-box;
 }
 
-body {
-  color: #ffff;
-  background-color: black;
+::-webkit-scrollbar {
+  background-color: transparent;
+  width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #ffff;
 }

@@ -24,8 +24,8 @@ const Navbar = ({ query }) => {
   };
 
   return (
-    <header className="fixed top-0 right-0 left-0 z-[100]">
-      <div className="flex md:justify-between justify-around items-center px-4 h-14 bg-[#1f1f1f] text-white">
+    <header className="fixed top-0 right-0 left-0 z-[100] bg-white">
+      <div className="flex md:justify-between justify-around items-center px-4 h-14">
         <div className="flex gap-2 md:gap-6 items-center text-2xl">
           <div>
             <GiHamburgerMenu className="cursor-pointer" onClick={handleClick} />
@@ -38,28 +38,28 @@ const Navbar = ({ query }) => {
           </Link>
         </div>
 
-        <div className="flex items-center md:justify-center md:gap-2">
+        <div className="flex items-center md:justify-center md:gap-2 border rounded-full px-2">
           <form action="" onSubmit={handleSubmit}>
-            <div className="flex bg-zinc-900 items-center h-10 px-4 pr-0">
+            <div className="flex items-center h-10 px-4 pr-0">
               <div className="flex gap-4 items-center pr-5">
                 <div>
                   <AiOutlineSearch />
                 </div>
                 <input
                   type="text"
-                  className="w-full md:w-96 bg-zinc-900 focus:outline-none border-none"
+                  className="w-full md:w-96 focus:outline-none border-none"
                   placeholder="Search"
                   onChange={(e) => setInput(e.target.value)}
                   value={input}
                 />
               </div>
-              <button className="h-10 px-3 2-16 flex items-center justify-center bg-zinc-800">
+              {/* <button className="h-10 px-3 2-16 flex items-center justify-center">
                 <AiOutlineSearch className="text-xl" />
-              </button>
+              </button> */}
             </div>
           </form>
 
-          <div className="text-xl p-3 bg-zinc-900 rounded-full md:block hidden">
+          <div className="text-xl p-3 rounded-full md:block hidden text-gray-800">
             <TiMicrophone className="cursor-pointer" />
           </div>
         </div>
@@ -68,11 +68,11 @@ const Navbar = ({ query }) => {
           <BsCameraVideo className="hidden md:block" />
           <div className="relative hidden md:block cursor-pointer">
             <BsBell />
-            <span className="absolute bottom-2 left-2 text-xs bg-red-600 rounded-full px-1">
+            <span className="absolute bottom-2 left-2 text-xs bg-red-600 text-white rounded-full px-1">
               9+
             </span>
           </div>
-          <span className="material-symbols-outlined w-9 h-9 rounded-full hidden md:block text-3xl text-gray-300 cursor-pointer">
+          <span className="material-symbols-outlined w-9 h-9 rounded-full hidden md:block text-3xl text-gray-800 cursor-pointer">
             account_circle
           </span>
         </div>

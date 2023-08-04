@@ -64,7 +64,7 @@ const Card = ({ video }) => {
             alt=""
             className="w-full h-full object-fill rounded-lg"
           />
-          <div className="absolute bottom-2 right-3 bg-black/80 px-[8px] py-[2px] text-sm rounded-md">
+          <div className="absolute bottom-2 right-3 bg-black/90 px-[8px] py-[2px] text-sm rounded-md text-white">
             {_duration}
           </div>
         </div>
@@ -74,11 +74,11 @@ const Card = ({ video }) => {
 
           <div>
             <div className="text-base line-clamp-2 mb-2">{title}</div>
-            <p className="text-base text-gray-300">{channelTitle}</p>
-            <span className="after:content-['•'] after:mx-1 text-sm text-gray-300">
+            <p className="text-base text-gray-900">{channelTitle}</p>
+            <span className="after:content-['•'] after:mx-1 text-sm text-gray-900">
               {numeral(viewCount).format("0.a")} views
             </span>
-            <span className="text-sm text-gray-300">
+            <span className="text-sm text-gray-900">
               {moment(publishedAt).fromNow()}
             </span>
           </div>

@@ -24,17 +24,17 @@ const Descriptions = ({ data }) => {
       <div
         className={`transition-all ease-in-out duration-500 ${
           showMore ? "" : "h-[100px] overflow-hidden"
-        } text-white`}
+        }`}
       >
-        <p className="pb-2 text-gray-300 flex gap-3">
+        <p className="pb-2 flex gap-3">
           {data ? numeral(data.statistics.viewCount).format("0.a") : ""}
           <span>{data ? moment(data.snippet.publishedAt).fromNow() : ""}</span>
         </p>
         {/* {data ? data.snippet.description : ""} */}
-        {descriptions()}
+        <p className="font-base">{descriptions()}</p>
       </div>
       <div
-        className="mt-3 cursor-pointer text-gray-300"
+        className="mt-3 cursor-pointer"
         onClick={() => setShowMore(!showMore)}
       >
         Show More..

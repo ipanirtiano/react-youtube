@@ -25,36 +25,34 @@ const VideoMetaData = ({ data }) => {
               <p className="text-sm md:text-base w-full">
                 {data ? data.snippet.channelTitle : ""}
               </p>
-              <p className="text-gray-300 font-light text-sm md:text-base">
-                Subscirber
-              </p>
+              <p className="text-gray-900 text-sm md:text-base">Subscirber</p>
             </div>
           </div>
         </div>
 
         <div className="flex space-x-5 items-center">
           <div className="flex items-center space-x-2 cursor-pointer">
-            <div className="flex items-center space-x-2 bg-[#1f1f1f] py-2 px-3 rounded-md cursor-pointer">
+            <div className="flex items-center space-x-2 bg-red-600 text-white py-2 px-3 rounded-md cursor-pointer">
               <BsBell />
               <p className="text-sm md:text-base">Subsribed</p>
             </div>
-            <span className="material-symbols-outlined font-light text-sm md:text-base">
+            <span className="material-symbols-outlined  text-sm md:text-base">
               thumb_up
             </span>
-            <p className="font-light text-sm md:text-base">
+            <p className=" text-sm md:text-base">
               {data ? numeral(data.statistics.viewCount).format("0.a") : ""}
             </p>
             <span>|</span>
-            <span className="material-symbols-outlined font-light text-sm md:text-base">
+            <span className="material-symbols-outlined  text-sm md:text-base">
               thumb_down
             </span>
           </div>
           <div className="flex items-center gap-2 cursor-pointer text-sm md:text-base">
             <FaShare />
-            <p className="font-light text-sm md:text-base">Share</p>
+            <p className=" text-sm md:text-base">Share</p>
           </div>
           <div className="md:flex items-center cursor-pointer hidden">
-            <span className="material-symbols-outlined font-light text-sm md:text-base">
+            <span className="material-symbols-outlined  text-sm md:text-base">
               more_vert
             </span>
           </div>

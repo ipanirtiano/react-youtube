@@ -51,12 +51,10 @@ const VideoHorizontal = ({ data }) => {
 
         <div className="flex flex-col w-full">
           <p className="line-clamp-2 text-sm">{data.snippet.title}</p>
-          <p className="font-light text-gray-300 text-sm">
-            {data.snippet.channelTitle}
-          </p>
+          <p className=" text-gray-900 text-sm">{data.snippet.channelTitle}</p>
           <div className="flex flex-wrap space-x-2">
-            <p className="font-light text-gray-300">Views</p>
-            <p className="font-light text-gray-300"></p>
+            <p className=" text-gray-900">Views</p>
+            <p className=" text-gray-900"></p>
           </div>
         </div>
       </div>
