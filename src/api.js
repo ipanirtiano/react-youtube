@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const API_KEY = "AIzaSyBTlnQ7MDPUXPKXclK5ej1YkIPyBoIOgqM";
+const API_KEY = "AIzaSyCqBdwtlntkLM_Mxgk5xKU8qN8yqb1cKoU";
 
 const BASE_URL = "https://youtube.googleapis.com/youtube/v3";
 
